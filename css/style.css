@@ -9,11 +9,30 @@
 body{
     background-color: black;
     color: white;
+    letter-spacing: 3px;
 }
 /* /general rules */
+/* hero section */
+.hero img{
+    object-fit: contain;
+    object-position: left;
+    width: 100%;
+    height: 200px;
+}
+/* /hero section */
 /* main section */
 main{
     display: grid;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
+}
+#human-style{
+    grid-column: span 2;
 }
 /* /main section */
