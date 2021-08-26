@@ -32,7 +32,12 @@ main{
     gap: 20px;
     grid-template-columns: 1fr 1fr;
 }
+#ordered-style{
+    text-align: end;
+}
 #human-style{
+    text-align: center;
+    padding: 30px;
     grid-column: span 2;
 }
 /* /main section */
