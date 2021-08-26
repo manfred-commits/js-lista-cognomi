@@ -5,12 +5,14 @@
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
 
 // 1. chiedi all’utente il cognome
-var listaCognomi= ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
+var listaCognomi= ["Bianchi ", "Neri ", "Rossi ", "Verdi ", "Gialli "];
 var cognomeUtente = prompt("Inserisci il tuo cognome: ");
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
 listaCognomi.push(cognomeUtente);
+document.getElementById("unordered_Array").innerHTML = listaCognomi;
 // 2.2 si usa la funzione sort per ordinare gli elementi nell'array alfabeticamente
 console.log(listaCognomi.sort());
+document.getElementById("ordered_Array").innerHTML = listaCognomi;
 // 3. stampa la lista ordinata alfabeticamente
 for(var i=0;i<listaCognomi.length;i++){
     console.log(listaCognomi[i]);
