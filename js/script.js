@@ -25,3 +25,4 @@ for(var i=0;i<listaCognomi.length;i++){
 
 // 5. Soluzione al punto 4 senza ciclo
 alert("Il cognome inserito dall'utente, si trova in posizione: "+(listaCognomi.indexOf(cognomeUtente)+1)+"\n ed è : "+cognomeUtente);
+console.log("Posizione: "+(listaCognomi.indexOf(cognomeUtente)+1)+" \nCognome: "+cognomeUtente);
