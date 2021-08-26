@@ -6,7 +6,9 @@
 
 // 1. chiedi all’utente il cognome
 var listaCognomi= [" Bianchi", " Neri", " Rossi", " Verdi", " Gialli"];
-var cognomeUtente = " "+prompt("Inserisci il tuo cognome: ");
+var cognomeUtente = " "+prompt("Inserisci il tuo cognome: ").toLowerCase();
+cognomeUtente = cognomeUtente.charAt(0).toUpperCase()+cognomeUtente.slice(1);
+
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
 listaCognomi.push(cognomeUtente);
 document.getElementById("unordered_Array").innerHTML = listaCognomi;
