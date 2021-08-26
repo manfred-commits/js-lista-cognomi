@@ -5,8 +5,8 @@
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
 
 // 1. chiedi all’utente il cognome
-var listaCognomi= ["Bianchi ", "Neri ", "Rossi ", "Verdi ", "Gialli "];
-var cognomeUtente = prompt("Inserisci il tuo cognome: ");
+var listaCognomi= [" Bianchi", " Neri", " Rossi", " Verdi", " Gialli"];
+var cognomeUtente = " "+prompt("Inserisci il tuo cognome: ");
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
 listaCognomi.push(cognomeUtente);
 document.getElementById("unordered_Array").innerHTML = listaCognomi;
@@ -28,3 +28,5 @@ for(var i=0;i<listaCognomi.length;i++){
 // 5. Soluzione al punto 4 senza ciclo
 alert("Il cognome inserito dall'utente, si trova in posizione: "+(listaCognomi.indexOf(cognomeUtente)+1)+"\n ed è : "+cognomeUtente);
 console.log("Posizione: "+(listaCognomi.indexOf(cognomeUtente)+1)+" \nCognome: "+cognomeUtente);
+document.getElementById("user_surname").innerHTML = ("Posizione del cognome utente: "+(listaCognomi.indexOf(cognomeUtente)+1)+" cognome: "+cognomeUtente);
+
