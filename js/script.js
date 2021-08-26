@@ -10,6 +10,7 @@ var cognomeUtente = " "+prompt("Inserisci il tuo cognome: ");
 // 2. inseriscilo in un array con altri cognomi: ‘Bianchi’, ‘Neri’, ‘Rossi’, ‘Verdi’, ‘Gialli’
 listaCognomi.push(cognomeUtente);
 document.getElementById("unordered_Array").innerHTML = listaCognomi;
+console.log(listaCognomi);
 // 2.2 si usa la funzione sort per ordinare gli elementi nell'array alfabeticamente
 console.log(listaCognomi.sort());
 document.getElementById("ordered_Array").innerHTML = listaCognomi;
