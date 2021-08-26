@@ -16,3 +16,8 @@ for(var i=0;i<listaCognomi.length;i++){
     console.log(listaCognomi[i]);
     alert("Il "+(i+1)+"° Cognome è: "+ listaCognomi[i]);
 }
+for(var i=0;i<listaCognomi.length;i++){
+    if(listaCognomi[i]==cognomeUtente){
+        alert("Il cognome inserito dall'utente, si trova in posizione: "+(i+1)+"\n ed è : "+cognomeUtente);
+    }
+}
