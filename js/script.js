@@ -17,8 +17,11 @@ for(var i=0;i<listaCognomi.length;i++){
     alert("Il "+(i+1)+"° Cognome è: "+ listaCognomi[i]);
 }
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
-for(var i=0;i<listaCognomi.length;i++){
-    if(listaCognomi[i]==cognomeUtente){
-        alert("Il cognome inserito dall'utente, si trova in posizione: "+(i+1)+"\n ed è : "+cognomeUtente);
-    }
-}
+// for(var i=0;i<listaCognomi.length;i++){
+//     if(listaCognomi[i]==cognomeUtente){
+//         alert("Il cognome inserito dall'utente, si trova in posizione: "+(i+1)+"\n ed è : "+cognomeUtente);
+//     }
+// }
+
+// 5. Soluzione al punto 4 senza ciclo
+alert("Il cognome inserito dall'utente, si trova in posizione: "+(listaCognomi.indexOf(cognomeUtente)+1)+"\n ed è : "+cognomeUtente);
