@@ -14,6 +14,7 @@ listaCognomi.push(cognomeUtente);
 document.getElementById("unordered_Array").innerHTML = listaCognomi.join(",  ");
 console.log(listaCognomi);
 // 2.2 si usa la funzione sort per ordinare gli elementi nell'array alfabeticamente
+listaCognomi.sort();
 console.log(listaCognomi.sort());
 document.getElementById("ordered_Array").innerHTML = listaCognomi.join(",  ");
 // 3. stampa la lista ordinata alfabeticamente
